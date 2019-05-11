@@ -1,4 +1,4 @@
-# oakwiltmap
+# Oak Wilt Map for Central Ohio
 A map of Oak Wilt disease coverage for trees in the central Ohio region.
 
 ## Adding new trees
