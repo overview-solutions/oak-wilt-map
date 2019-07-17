@@ -78,9 +78,9 @@ map.on('load', function() {
         },
         // color circles by ethnicity, using a match expression
         // https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions-match
-        'circle-color': '#ff0000',
-        'circle-stroke-color': '#550000',
-        'circle-stroke-width':1
+        'circle-color': '#ffff00',
+        'circle-stroke-color': '#f00',
+        'circle-stroke-width':2
         }
     });
     var popup = new mapboxgl.Popup({
