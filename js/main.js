@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiZWFydGhhZGFtIiwiYSI6ImNpenJpcTFkbjAwODUyd21mcXhhN3NscG4ifQ.5aXKquX7sLeQr6xFLdghFg';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZWFydGhhZGFtIiwiYSI6ImNqd3VzNnN3ZDA2OWE0OHBoN2xrNmlrNGYifQ.MMqPanYD57YyTkaJYxyeHQ';
 /*
 var months = [
     'January 2018',
@@ -67,9 +67,9 @@ map.on('load', function() {
         'type': 'circle',
         'source': {
           type: 'vector',
-          url: 'mapbox://earthadam.4tll866m'  //smrtcbus.cficgu1f
+          url: 'mapbox://earthadam.5lx1btyu'  //smrtcbus.cficgu1f
         },
-        'source-layer': 'Oak_Wilt_Trees-9lyu36',
+        'source-layer': 'oak-wilt-6411ux',
         'paint': {
         // make circles larger as the user zooms from z12 to z22
           'circle-radius': {
