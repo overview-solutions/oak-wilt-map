@@ -105,6 +105,28 @@ map.on('load', function() {
             //.setHTML(e.features[0].properties.description)
             .addTo(map);
     });
+    map.on('click', 'Oak Wilt Trees', function(e) {
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
+
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup.setLngLat(e.features[0].geometry.coordinates)
+            .setHTML(
+                "<h2>"+e.features[0].properties["Address"]+"</h2>"+
+                "<b>Date Identified:</b> "+e.features[0].properties["Date Identified"]+"<br>"+
+                "<b>Arborist:</b> "+e.features[0].properties["Arborist Contact"]+"<br>"+
+                "<b>Diagnosis:</b> "+e.features[0].properties["Lab Confirmation"]+"<br>"+
+                "<b>Removed:</b> "+e.features[0].properties["Removed"]+"<br>"+
+                "<b>Testing Lab:</b> "+e.features[0].properties["Testing Lab"]
+            )
+            //.setHTML(e.features[0].properties.description)
+            .addTo(map);
+    });
+    map.on('click', function() {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+    });
     /*
     filterBy(0);
 
